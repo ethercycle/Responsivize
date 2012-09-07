@@ -1,0 +1,14 @@
+QUICK GUIDE TO APPLE TOUCH ICONS
+
+When someone bookmarks a website to their homescreen, iOS creates an icon for it. The most direct way to accomodate this feature is to create a larger version of your favicon. iOS will look for one of four different file names in the your root directory depending on the device:
+
+apple-touch-icon-114x114.png (114px x 114px)
+apple-touch-icon-72x72.png (72px x 72px)
+apple-touch-icon-57x57.png (57px x 57px)
+apple-touch-icon.png (57px x 57px)
+
+When you save them to web & devices in Photoshop, use 24bit PNG, non interlaced. You shouldn't add any effects or even rounded corners, just square. iOS will add rounded corners and a gradient on its own. (If you'd like to do it yourself and have iOS not add any effects, just append "-precomposed" to the filename.)
+
+If you need to store the touch icons in someplace other than the root directory, you can specify the new location in your metatags.
+
+The iOS developer library has more information on specifying icons: http://developer.apple.com/library/ios/#DOCUMENTATION/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
