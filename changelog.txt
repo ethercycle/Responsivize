@@ -1,0 +1,9 @@
+Responsivize Change Log 
+
+09-September-2012 
+	1. Change logo image to support anchor tags.
+	2. Removed clear div. (No more tag soup.)
+	3. Added this change log.
+
+05-September-2012 
+	1. First release!

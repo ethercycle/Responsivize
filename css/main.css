@@ -102,11 +102,21 @@ body {
 	background-color: #fef9f2;
 	}
 
-object {
+#logo {
+	background-image: url(/img/responsivize.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 	width: 305px;
 	height: 76px;
-	display: block;
 	margin: auto;
+	margin-top: 4px;
+	text-indent: -9999;
+	display: block;
+}
+
+.lt-ie9 #logo {
+	background-image: url(/img/responsivize.png);
+	margin-top: 0px;	
 }
 
 nav {
@@ -127,8 +137,6 @@ nav a:hover {text-decoration: underline;}
 
 nav a:first-child {margin-left: 0;}
 nav a:last-child {margin-right: 0;}
-
-.clear {clear: both;}
 
 h1, h2, h3, footer {font-family: Georgia, Arial, sans-serif;}
 
@@ -177,9 +185,7 @@ aside {
 aside p {font-size: 1.4em;}
 
 footer {
-	border: 1px solid #dcdad6;
-	border-left: none; border-right: none;
-	margin-top: 30px;
+	margin-top: 50px;
 	text-align: center;
 	font-style: italic;
 	font-size: 1.6em;
@@ -189,6 +195,12 @@ footer {
 
 footer a, footer a:visited {color: #ff6666; text-decoration: none;}
 footer a:hover {text-decoration: underline;}
+
+nav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -200,7 +212,7 @@ footer a:hover {text-decoration: underline;}
 	
 	body {padding: 0 20px;}
 
-	object {
+	#logo {
 		width: 320px;
 		height: 80px;
 	}
@@ -226,7 +238,7 @@ footer a:hover {text-decoration: underline;}
 
 @media only screen and (min-width: 1040px) {
 	
-	object {
+	#logo {
 		display: inline;
 		float: left;
 	}
